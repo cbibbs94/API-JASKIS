@@ -107,4 +107,4 @@
         db.bounties.deleteMany({name: 'Songbird'})
 
 // 4. Update all captured statuses to true 
-
+        db.bounties.updateMany({captured: false}, {$set:{captured: true}})
